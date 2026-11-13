@@ -1,10 +1,10 @@
-// preguntas2.js — Banco Daypo (59 preguntas), compatible con preguntas.js
-// Mismo formato que preguntas.js. Los ids siguen desde el 73 para no chocar con el banco anterior.
+// preguntas2.js — Banco Daypo + preguntas nuevas (58 preguntas), compatible con preguntas.js
+// Mismo formato que preguntas.js. Los ids van del 73 al 137 (hay huecos porque se quitaron las repetidas del banco anterior).
 // Tipos: "single" (una opción), "tf" (verdadero/falso) · correct: posiciones desde 0
-// Se suma solo a ALL_QUESTIONS: cargá este archivo DESPUÉS de preguntas.js.
+// Se suma a ALL_QUESTIONS: cargá este archivo DESPUÉS de preguntas.js.
 const PREGUNTAS_2 = [
   // ==========================================
-  // BLOQUE 3: BANCO DAYPO (59 PREGUNTAS)
+  // BLOQUE 3: BANCO DAYPO Y PREGUNTAS NUEVAS (58 PREGUNTAS)
   // ==========================================
   {
     id: 73,
@@ -24,8 +24,8 @@ const PREGUNTAS_2 = [
     type: "tf",
     text: "Cuando el tipo de cambio de un país A desciende en relación con la moneda de otro país B, se puede afirmar que la moneda de A sufre una apreciación y la de B, una depreciación.",
     options: ["Verdadero", "Falso"],
-    correct: [1],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
+    correct: [0],
+    explanation: "Si el tipo de cambio de A desciende respecto de la moneda de B, la moneda de A se aprecia y la de B se deprecia."
   },
   {
     id: 75,
@@ -218,27 +218,6 @@ const PREGUNTAS_2 = [
     explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
   },
   {
-    id: 90,
-    type: "single",
-    text: "Suponiendo el caso que estemos en un régimen de tipo de cambio fijo, ¿qué pasa si la Balanza de Pagos se encuentra en déficit?",
-    options: [
-      "Aumenta la oferta de divisas, por lo que el BCRA debe salir a comprar divisas",
-      "Aumenta la demanda de divisas, por lo que el BCRA debe salir a comprar divisas",
-      "Aumenta la oferta de divisas, por lo que el BCRA debe salir a vender divisas",
-      "Aumenta la demanda de divisas, por lo que el BCRA debe salir a vender divisas"
-    ],
-    correct: [3],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
-  },
-  {
-    id: 91,
-    type: "tf",
-    text: "El Producto Bruto Interno (PBI) corregido según la Paridad de Poder Adquisitivo (PPA) permite su comparación eliminando los tipos de cambio, al utilizar como base, en su cálculo, una canasta de bienes y servicios en función del precio de un país de referencia, EEUU.",
-    options: ["Verdadero", "Falso"],
-    correct: [0],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
-  },
-  {
     id: 92,
     type: "single",
     text: "La Contabilidad Nacional:",
@@ -328,19 +307,6 @@ const PREGUNTAS_2 = [
       "Siempre que sea contraída por el gobierno de un país sin importar quien sea el acreedor.",
       "El acreedor es una persona física o jurídica nacional.",
       "Se establece su cumplimiento en moneda nacional (pesos)."
-    ],
-    correct: [0],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
-  },
-  {
-    id: 100,
-    type: "single",
-    text: "La Rentabilidad Bancaria es:",
-    options: [
-      "Tener ganancia",
-      "Velocidad de transformarse en moneda",
-      "Capacidad para convertir los depósitos en efectivo",
-      "Tener más dinero del que deben"
     ],
     correct: [0],
     explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
@@ -458,19 +424,6 @@ const PREGUNTAS_2 = [
     explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
   },
   {
-    id: 110,
-    type: "single",
-    text: "En caso de superávit fiscal, para lograr el equilibrio el gobierno puede:",
-    options: [
-      "Invertir en bienes de capital aumentando el gasto público y así expandir la economía en general.",
-      "Fijar nuevos impuestos para aumentar su recaudación y contraer la economía, afectando en particular al sector privado.",
-      "Aumentar los impuestos y disminuir el gasto público.",
-      "Contraer empréstitos e incrementar sus reservas."
-    ],
-    correct: [0],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
-  },
-  {
     id: 111,
     type: "single",
     text: "¿Qué mide el concepto de Riesgo País?",
@@ -565,21 +518,6 @@ const PREGUNTAS_2 = [
     explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
   },
   {
-    id: 119,
-    type: "single",
-    text: "Cuando la inflación alcanza valores extraordinarios, y hablamos en realidad de hiperinflación, hay una función que el dinero ya no puede cumplir:",
-    options: [
-      "Ser un medio de cambio",
-      "Ser un medio de pago",
-      "Ser un sistema de referencia o de medición",
-      "Ser un activo financiero que se conserva a través del tiempo",
-      "Ser una unidad de cuenta",
-      "Ninguna de las anteriores"
-    ],
-    correct: [3],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
-  },
-  {
     id: 120,
     type: "single",
     text: "La diferencia entre el PBI y el PBN radica en:",
@@ -648,19 +586,6 @@ const PREGUNTAS_2 = [
     explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
   },
   {
-    id: 126,
-    type: "single",
-    text: "La Teoría de las ventajas comparativas explica:",
-    options: [
-      "Cómo a través del comercio internacional, algunos países pierden y otros ganan.",
-      "Cómo cada país genera mayor eficiencia si produce todo lo que va a consumir. De ese modo no se ve afectado por el sector externo.",
-      "Que por más que un país sea más eficiente que el otro, la especialización y el intercambio de bienes beneficia a ambos países.",
-      "Cómo los aranceles y retenciones benefician al país con más y mejores productos."
-    ],
-    correct: [2],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
-  },
-  {
     id: 127,
     type: "single",
     text: "En economía, a través de la intervención estatal:",
@@ -700,19 +625,6 @@ const PREGUNTAS_2 = [
     explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
   },
   {
-    id: 130,
-    type: "single",
-    text: "El término déficit cuasi fiscal hace referencia a:",
-    options: [
-      "Los impuestos que la gente paga pero el Estado no registra correctamente",
-      "Las operaciones monetarias del Banco Central que generan pérdidas o requieren emisión de moneda",
-      "El dinero que se ahorra el Estado cuando no construye escuelas",
-      "La falta de pago de impuestos por parte de los ciudadanos extranjeros"
-    ],
-    correct: [1],
-    explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
-  },
-  {
     id: 131,
     type: "single",
     text: "La teoría de las ventajas comparativas:",
@@ -724,6 +636,84 @@ const PREGUNTAS_2 = [
     ],
     correct: [2],
     explanation: "Fuente: banco de preguntas Daypo (respuesta marcada como correcta en el test)."
+  },
+  {
+    id: 132,
+    type: "single",
+    text: "¿Cuál es la definición de Renta Nacional desde la perspectiva del Ingreso?",
+    options: [
+      "Es el presupuesto total aprobado por el Congreso para el gasto público",
+      "Es la suma de todo lo gastado por las familias en bienes de consumo durables",
+      "Es la suma de rentas o ingresos de los factores de la producción (salarios, beneficios, etc.)",
+      "Es el valor total de las Exportaciones netas de un país en un año"
+    ],
+    correct: [2],
+    explanation: "Desde el enfoque del ingreso, la Renta Nacional suma las rentas de los factores de la producción: salarios, alquileres, intereses y beneficios. (Clave deducida: el documento original no traía la respuesta marcada.)"
+  },
+  {
+    id: 133,
+    type: "single",
+    text: "Son funciones del Banco Central de la República Argentina (BCRA):",
+    options: [
+      "Desarrollar y ejecutar la Política Fiscal.",
+      "Evaluar y corregir el equilibrio fiscal.",
+      "Registrar las transacciones de la balanza de pagos.",
+      "Emitir moneda de curso legal, emisión primaria, y regular la emisión secundaria de los bancos comerciales públicos y privados."
+    ],
+    correct: [3],
+    explanation: "El BCRA emite moneda de curso legal (emisión primaria) y regula la emisión secundaria de los bancos comerciales. La política fiscal le corresponde al Poder Ejecutivo. (Clave deducida: el documento original no traía la respuesta marcada.)"
+  },
+  {
+    id: 134,
+    type: "single",
+    text: "En la Balanza de Pagos, ¿qué registro incluye las transacciones de bienes, servicios y transferencias corrientes?",
+    options: [
+      "Presupuesto Nacional",
+      "Cuenta de Capital",
+      "Reservas Internacionales",
+      "Cuenta corriente"
+    ],
+    correct: [3],
+    explanation: "La cuenta corriente registra el comercio de bienes y servicios y las transferencias corrientes. (Clave deducida: el documento original no traía la respuesta marcada.)"
+  },
+  {
+    id: 135,
+    type: "single",
+    text: "¿En qué consiste la Ley de un solo precio vinculada a la Paridad de Poder Adquisitivo?",
+    options: [
+      "Asegura que el PBI de los países pobres sea igual al de los países ricos cuando se mide en dólares nominales",
+      "Es una ley gubernamental que prohíbe la inflación de bienes finales en economías abiertas",
+      "Dictamina que el tipo de cambio nominal debe ser siempre igual a la tasa de inflación acumulada anual",
+      "Establece que, en ausencia de barreras, un bien idéntico debe venderse al mismo precio en todos los países al expresarse en la misma moneda"
+    ],
+    correct: [3],
+    explanation: "Sin barreras ni costos de transporte, un bien idéntico se vende al mismo precio en todos los países al expresarlo en una misma moneda. Es la base de la PPA. (Clave deducida: el documento original no traía la respuesta marcada.)"
+  },
+  {
+    id: 136,
+    type: "single",
+    text: "En el Sistema Tributario Argentino:",
+    options: [
+      "Sólo la Nación puede cobrar impuestos.",
+      "Las provincias sólo cobran tasas.",
+      "Los municipios cobran tasas, por ejemplo, alumbrado público.",
+      "Los municipios no tienen facultades tributarias."
+    ],
+    correct: [2],
+    explanation: "Los municipios cobran tasas por los servicios que prestan, como el alumbrado público. Nación, provincias y municipios tienen facultades tributarias. (Clave deducida: el documento original no traía la respuesta marcada.)"
+  },
+  {
+    id: 137,
+    type: "single",
+    text: "La moneda y el dinero conceptualmente…",
+    options: [
+      "… surgen cuando una sociedad avanza desde una economía de subsistencia hacia otra economía de intercambio.",
+      "… son necesarias para el pago de las operaciones de comercio internacional.",
+      "… son herramientas de trueque.",
+      "… se emiten como medio de pago de impuestos."
+    ],
+    correct: [0],
+    explanation: "La moneda y el dinero surgen cuando la sociedad pasa de una economía de subsistencia a una de intercambio, para superar las limitaciones del trueque. (Clave deducida: el documento original no traía la respuesta marcada.)"
   }
 ];
 
